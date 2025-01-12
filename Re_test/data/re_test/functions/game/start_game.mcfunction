@@ -14,9 +14,10 @@ effect give @a[tag=gaming] minecraft:instant_health 9 9 true
 effect give @a[tag=gaming] minecraft:resistance infinite 0 true
 effect give @a[tag=gaming] minecraft:hunger 3 100 true
 
-# 开局刷新冷却时间
-scoreboard players set @e[tag=zomb_check_mark] cool_down 400
-tag @e[tag=zomb_check_mark] add cd
+# 开局安全时间
+execute if score safe_time mode matches ..0 run scoreboard players set safe_time mode 0
+execute if score safe_time mode matches ..0 store result score @e[tag=zomb_check_mark] cool_down run scoreboard players get safe_time mode
+execute if score safe_time mode matches ..0 run tag @e[tag=zomb_check_mark] add cd
 # 刷新枪械箱
 setblock -57 92 -3 minecraft:redstone_block
 # 刷新物资箱
