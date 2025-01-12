@@ -1,0 +1,171 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 0b, GunFireMode: \"SEMI\", GunId: \"tacz:ai_awp\", GunCurrentAmmoCount: 0}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 1b, GunFireMode: \"SEMI\", GunId: \"tacz:m95\", GunCurrentAmmoCount: 5}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 1b, GunFireMode: \"SEMI\", GunId: \"lradd:axmc\", GunCurrentAmmoCount: 8}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 1b, GunFireMode: \"SEMI\", GunId: \"lradd:m200\", GunCurrentAmmoCount: 10}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "tacz:attachment",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId: \"rfp:scope_acog_ta648_1\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 6.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.6
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "tacz:attachment",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentId: \"tacz:scope_lpvo_1_6\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15.0,
+                                "max": 60.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

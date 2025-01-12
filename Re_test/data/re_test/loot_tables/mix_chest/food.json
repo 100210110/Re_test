@@ -1,0 +1,688 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:golden_apple",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display: {Name: '[{\"text\":\"附魔金苹果\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}]'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:cooked_porkchop",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:pumpkin_pie",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:bread",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:cooked_salmon",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:cooked_chicken",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:golden_carrot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:cooked_beef",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:cooked_cod",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:pufferfish",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '{\"text\":\"气鼓鼓\",\"italic\":false}'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:baked_potato",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:carrot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:melon_slice",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:beetroot_soup",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:cookie",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:sweet_berries",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:beetroot",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:dried_kelp",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 20,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "yuushya:melon",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '{\"text\":\"看着很好吃の西瓜片\",\"italic\":false}'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 160, EffectId: 20, \"forge:effect_id\": \"minecraft:wither\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '{\"text\":\"五粮家の饭\",\"italic\":false}'}, Effects: [{EffectDuration: 160, EffectId: 20, \"forge:effect_id\": \"minecraft:wither\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 160, EffectId: 10, \"forge:effect_id\": \"minecraft:regeneration\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 180, EffectId: 18, \"forge:effect_id\": \"minecraft:weakness\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 80, EffectId: 12, \"forge:effect_id\": \"minecraft:fire_resistance\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 160, EffectId: 15, \"forge:effect_id\": \"minecraft:blindness\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 100, EffectId: 16, \"forge:effect_id\": \"minecraft:night_vision\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:suspicious_stew",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{Effects: [{EffectDuration: 240, EffectId: 19, \"forge:effect_id\": \"minecraft:poison\"}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

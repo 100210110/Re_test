@@ -1,0 +1,1 @@
+tellraw @s [{"text":""},{"text":"[模式设置]","bold":true,"color":"green"},{"text":"\n"},{"text":">>> ","color":"yellow"},{"text":"设置各锚点名字可见性","underlined":true,"color":"yellow"},{"text":"\n"},{"text":">>> ","color":"yellow"},{"text":"难度调整","underlined":true,"color":"yellow"}]

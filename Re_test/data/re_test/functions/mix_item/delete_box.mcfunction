@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:armor_stand,tag=sum_mix_mark,sort=nearest,distance=..30,limit=1] at @s run data modify block ~ ~ ~ LootTable set value ""
+execute as @e[type=minecraft:armor_stand,tag=sum_mix_mark,sort=nearest,distance=..30,limit=1] at @s positioned ~ ~ ~ if block ~ ~ ~ minecraft:barrel run setblock ~ ~ ~ air
+kill @e[type=minecraft:armor_stand,tag=sum_mix_mark,sort=nearest,distance=..30,limit=1]
