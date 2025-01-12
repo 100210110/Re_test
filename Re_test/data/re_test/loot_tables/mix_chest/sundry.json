@@ -1,0 +1,363 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "yuushya:hanged_clothes",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '[{\"text\":\"moiの旧装\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}]'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "yuushya:mounted_clothes_2",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '[{\"text\":\"云曦の公服\",\"color\":\"yellow\",\"bold\":false,\"italic\":false}]'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "yuushya:mounted_clothes_0",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{RepairCost: 0, display: {Name: '[{\"text\":\"Reの私服\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}]'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "yuushya:high_poster",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:suspicious_sand",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HideFlags: 127, BlockEntityTag: {item: {Count: 1b, id: \"minecraft:netherite_boots\", tag: {Unbreakable: 1b, HideFlags: 7, Enchantments: [{lvl: 8, id: \"minecraft:blast_protection\"}, {lvl: 3, id: \"minecraft:depth_strider\"}, {lvl: 20, id: \"minecraft:feather_falling\"}, {lvl: 7, id: \"minecraft:fire_protection\"}, {lvl: 32767, id: \"minecraft:thorns\"}, {lvl: 20, id: \"minecraft:protection\"}, {lvl: 3, id: \"minecraft:soul_speed\"}, {lvl: 1, id: \"minecraft:aqua_affinity\"}, {lvl: 255, id: \"minecraft:respiration\"}], display: {Name: '{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"bold\":true,\"color\":\"gold\",\"text\":\"Reの神奇鞋子\"}],\"text\":\"\"}'}, Damage: 63, AttributeModifiers: [{Amount: 30.0d, Slot: \"feet\", AttributeName: \"minecraft:generic.armor\", Operation: 0, UUID: [I; 0, 1, 2, 3]}, {Amount: 20.0d, Slot: \"feet\", AttributeName: \"minecraft:generic.armor_toughness\", Operation: 0, UUID: [I; 4, 5, 6, 7]}, {Amount: 100.0d, Slot: \"feet\", AttributeName: \"minecraft:generic.knockback_resistance\", Operation: 0, UUID: [I; 8, 9, 1, 2]}]}}, id: \"minecraft:brushable_block\"}, display: {Name: '{\"italic\":false,\"extra\":[{\"text\":\"\"},{\"bold\":true,\"color\":\"gold\",\"text\":\"Reの神奇沙子\"}],\"text\":\"\"}'}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 1
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:diamond",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:emerald",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:experience_bottle",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:slime_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:snowball",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:string",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:feather",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 15,
+                    "name": "minecraft:bone",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15,
+                                "max": 40
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

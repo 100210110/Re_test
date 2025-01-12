@@ -1,0 +1,171 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 1b,GunFireMode: \"SEMI\",GunId:\"lradd:mag7\",GunCurrentAmmoCount:5}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HasBulletInBarrel: 1b, GunId: \"tacz:m4a1\", AttachmentMUZZLE: {id: \"tacz:attachment\", Count: 1b, tag: {AttachmentId: \"tacz:muzzle_silence_phantom_s1\"}}, GunFireMode: \"AUTO\", GunCurrentAmmoCount: 29, AttachmentSTOCK: {id: \"tacz:attachment\", Count: 1b, tag: {AttachmentId: \"tacz:stock_militech_b5\"}}}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "tacz:modern_kinetic_gun",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AttachmentMUZZLE: {id: \"tacz:attachment\", Count: 1b, tag: {AttachmentId: \"tacz:muzzle_silence_phantom_s1\"}}, HasBulletInBarrel: 1b, GunFireMode: \"AUTO\", GunId: \"suffuse:qbz951\", GunCurrentAmmoCount: 29}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 3.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 3,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "cgm:stun_grenade",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1.0,
+                                "max": 6.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId: \"tacz:556x45\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 15.0,
+                                "max": 60.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "tacz:ammo",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{AmmoId: \"tacz:12g\"}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 4.0,
+                                "max": 36.0
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 1.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
