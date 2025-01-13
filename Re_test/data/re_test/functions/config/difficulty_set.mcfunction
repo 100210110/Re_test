@@ -1,5 +1,5 @@
 # 开头以及木桶锚点可见性
-tellraw @s [{"text":""},{"text":"\n"},{"text":"[难度设置]","bold":true,"color":"green"}]
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[难度设置]","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/function re_test:config/main"},"hoverEvent":{"action":"show_text","contents":[{"text":"点击返回主菜单","italic":true,"color":"yellow"}]}}]
 playsound minecraft:block.note_block.bell voice @s ~ ~ ~
 
 tellraw @s [{"text":""},{"text":"\n"},{"text":">>> ","color":"yellow"},{"text":"当前开局安全时间: ","color":"yellow"},{"score":{"name":"safe_time_sec","objective":"time"},"color":"green"},{"text":"秒","color":"green"},{"text":"  [刷新]","color":"green","clickEvent":{"action":"run_command","value":"/function re_test:math/update_safe_sec"},"hoverEvent":{"action":"show_text","contents":[{"text":"更改实时生效，点击刷新显示","color":"yellow"}]}}]

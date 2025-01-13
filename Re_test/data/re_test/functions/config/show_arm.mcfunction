@@ -1,5 +1,5 @@
 # 开头以及木桶锚点可见性
-tellraw @s [{"text":""},{"text":"\n"},{"text":"[锚点名字可见性]","bold":true,"color":"green"}]
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[锚点名字可见性]","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/function re_test:config/main"},"hoverEvent":{"action":"show_text","contents":[{"text":"点击返回主菜单","italic":true,"color":"yellow"}]}}]
 playsound minecraft:block.note_block.bell voice @s ~ ~ ~
 
 tellraw @s [{"text":""},{"text":"\n"},{"text":">>> ","color":"yellow"},{"text":"切换木桶锚点可见性","color":"yellow","clickEvent":{"action":"run_command","value":"/function re_test:show_arm/show_item_arm"},"hoverEvent":{"action":"show_text","contents":[{"text":"点击切换","italic":true,"color":"yellow"}]}}]
