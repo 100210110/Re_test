@@ -264,7 +264,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{AttachmentId: \"tacz:muzzle_silence_phantom_s1\"}"
+                            "tag": "{AttachmentId: \"tacz:muzzle_silencer_phantom_s1\"}"
                         },
                         {
                             "function": "minecraft:set_count",
@@ -414,7 +414,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{AttachmentId: \"tacz:muzzle_silence_phantom_s1\"}"
+                            "tag": "{AttachmentId: \"tacz:muzzle_silencer_phantom_s1\"}"
                         },
                         {
                             "function": "minecraft:set_count",
