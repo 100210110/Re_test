@@ -19,4 +19,10 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"检测锚点切换函数化","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"召唤锚点切换函数化","color":"yellow"}]
 
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[历史版本]","bold":true,"color":"yellow"},{"text":"\n"},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.4","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加僵尸刷新间隔计分板","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加刷新间隔设置面板","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"刷新枪械箱函数化","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"新增一键换装函数","color":"yellow"}]
+
 function re_test:vision
