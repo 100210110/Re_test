@@ -1,3 +1,3 @@
 tag @s add knockback_stick
-tellraw @s [{"text":""},{"text":">>> 恭喜获得Re星神的祝福, 成为击退令使"}]
+tellraw @s [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"恭喜获得星神Re的祝福，成为击退令使，获得：","color":"green"},{"text":"\n"},{"text":"　　- ","color":"green"},{"text":"获得Re星神的信物，击退棒一根（可带入游戏）","color":"yellow"},{"text":"\n"},{"text":"　　- ","color":"green"},{"text":"点此为Re星神献上感谢","color":"yellow","clickEvent":{"action":"open_url","value":"https://space.bilibili.com/177515472"},"hoverEvent":{"action":"show_text","contents":[{"text":"快点它！快！","color":"yellow"}]}}]
 give @s minecraft:blaze_rod{Enchantments:[{id:"minecraft:knockback",lvl:3}]}
