@@ -10,6 +10,7 @@ execute as @a[tag=gaming] run effect clear @s
 execute as @a[tag=gaming] run clear @s
 execute as @a[tag=gaming] run tp @s -151 109 177
 execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 60
+execute as @a[tag=gaming] run function re_test:tools/say_difficulty
 effect give @a[tag=gaming] minecraft:instant_health 9 9 true
 effect give @a[tag=gaming] minecraft:resistance infinite 0 true
 effect give @a[tag=gaming] minecraft:hunger 3 100 true
