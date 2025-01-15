@@ -1,0 +1,2 @@
+execute store result score unsetout_num math if entity @a[team=!setout]
+tellraw @s [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"当前未准备人数：","bold":true,"color":"yellow"},{"score":{"name":"unsetout_num","objective":"math"},"bold":true,"color":"green"}] 
