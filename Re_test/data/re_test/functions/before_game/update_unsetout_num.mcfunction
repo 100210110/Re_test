@@ -1,0 +1,2 @@
+execute store result score unsetout_num math if entity @a[team=!setout]
+data modify block ~ ~ ~ front_text set value {messages:["{\"text\":\"[邀请未准备玩家]\",\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"function re_test:before_game/get_unsetout_num\"}}","[{\"text\":\"\"},{\"text\":\"当前未准备玩家：\",\"color\":\"yellow\"},{\"score\":{\"name\":\"unsetout_num\",\"objective\":\"math\"},\"color\":\"aqua\"},{\"text\":\"人\",\"color\":\"aqua\"}]","{\"text\":\"右键邀请未准备玩家\",\"color\":\"red\"}","[\"\"]"]}
