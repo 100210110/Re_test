@@ -9,4 +9,4 @@ execute if score start_countdown time matches 1.. as @a at @s run playsound mine
 # 为 0 时开始
 execute if score start_countdown time matches 0 run title @a actionbar {"text":"游戏开始! ","bold":true,"color":"aqua"}
 execute if score start_countdown time matches 0 as @a at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 2 1
-execute if score start_countdown time matches 0 run say 测试结束后替换启动函数
+execute if score start_countdown time matches 0 run function re_test:game/start_game
