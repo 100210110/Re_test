@@ -1,5 +1,5 @@
 execute at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~
-tellraw @s [{"text":""},{"text":"\n"},{"text":"[当前版本]","bold":true,"color":"green"},{"text":"\n"},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.6.1","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[当前版本]","bold":true,"color":"green"},{"text":"\n"},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.6.2","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"难度更改","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加结算函数","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加多种趣味惩罚","color":"yellow"}]
@@ -8,3 +8,5 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加启动和中断开始游戏倒计时","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"未准备传送切换至trigger触发","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加玩家惩罚","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"更改为倒计时1秒时传送并重置","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"改为立即复活","color":"yellow"}]
