@@ -4,6 +4,7 @@ scoreboard players reset @a deathCount
 difficulty hard
 scoreboard players set game_start mode 1
 
+# 前置，清空玩家效果和背包
 tag @a[team=setout] add gaming
 team join playing @a[tag=gaming]
 execute as @a[tag=gaming] run effect clear @s

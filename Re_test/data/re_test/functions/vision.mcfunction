@@ -4,3 +4,5 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加结算函数","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加多种趣味惩罚","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加未准备人员数量检测","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加未准备人员数量邀请","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加启动和中断开始游戏倒计时","color":"yellow"}]
