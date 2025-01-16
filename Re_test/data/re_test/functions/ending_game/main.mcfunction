@@ -41,7 +41,7 @@ kill @e[type=minecraft:item]
 
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
-tp @a[team=dead_player] 207 305 105
+tp @a[team=dead_player] 207 305 105 180 0
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
 # 清理所有tag
