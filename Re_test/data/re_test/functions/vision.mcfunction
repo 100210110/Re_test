@@ -7,3 +7,4 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加未准备人员数量邀请","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加启动和中断开始游戏倒计时","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"未准备传送切换至trigger触发","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加玩家惩罚","color":"yellow"}]
