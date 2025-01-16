@@ -1,6 +1,7 @@
 tag @s remove helic
 tag @s remove dead
 scoreboard players reset @s deathCount  
+tp @s[team=setout] -151 109 177
 
 # 前置，清空玩家效果和背包
 tag @s[team=setout] add gaming
