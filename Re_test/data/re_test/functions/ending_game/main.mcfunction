@@ -24,14 +24,16 @@ bossbar remove minecraft:copter_time
 
 effect clear @a[tag=gaming]
 execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 20
+execute as @a[tag=gaming] run attribute @s minecraft:generic.movement_speed base set 0.12
 
 clear @a[tag=gaming]
 tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
 
-# 阵亡的加入此队伍，未阵亡回大厅
+# 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
+tp @a[team=dead_player] 207 305 105
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
 tag @a remove helic
