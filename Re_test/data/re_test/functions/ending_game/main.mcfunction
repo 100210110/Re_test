@@ -13,6 +13,7 @@
 
 gamemode adventure @a[tag=gaming]
 
+time set day
 difficulty peaceful
 scoreboard players set game_start mode 0
 scoreboard players reset copter time
