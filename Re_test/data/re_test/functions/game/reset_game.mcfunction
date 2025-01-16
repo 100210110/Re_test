@@ -20,8 +20,8 @@ kill @e[type=minecraft:block_display,tag=copter]
 kill @e[type=minecraft:block_display,tag=copter_button]
 
 effect clear @a[tag=gaming]
-effect give @a[tag=gaming] minecraft:slowness 5 5
 execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 20
+execute as @a[tag=gaming] run attribute @s minecraft:generic.movement_speed base set 0.12
 
 clear @a[tag=gaming]
 tag @e[tag=zomb_check_mark] remove run

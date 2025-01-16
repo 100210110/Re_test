@@ -3,13 +3,13 @@ tag @a remove dead
 scoreboard players reset @a deathCount
 difficulty hard
 scoreboard players set game_start mode 1
+time set night
 
 # 前置，清空玩家效果和背包
 tag @a[team=setout] add gaming
 team join playing @a[tag=gaming]
 execute as @a[tag=gaming] run effect clear @s
 execute as @a[tag=gaming] run clear @s
-execute as @a[tag=gaming] run tp @s -151 109 177
 
 # 个人难度设定
 execute as @a[tag=gaming] unless score @s personal_difficulty matches 0..4 run scoreboard players set @s personal_difficulty 2
