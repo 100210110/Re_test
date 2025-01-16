@@ -1,4 +1,4 @@
-
+execute unless score @s hard_style matches 0.. run scoreboard players set @s hard_style 0
 
 # 正常风格
 execute if score @s personal_difficulty matches 0 run tellraw @a[scores={hard_style=0}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">轮椅<","bold":true,"color":"#66CCFF"}]
