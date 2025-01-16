@@ -21,23 +21,32 @@ scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
 scoreboard objectives setdisplay sidebar.team.blue kill
 bossbar remove minecraft:copter_time
 
+# 清除发光引导
+kill @e[type=minecraft:block_display,tag=villager]
+kill @e[type=minecraft:block_display,tag=villager_button]
+kill @e[type=minecraft:block_display,tag=copter]
+kill @e[type=minecraft:block_display,tag=copter_button]
 
+# 恢复玩家属性
 effect clear @a[tag=gaming]
 execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 20
 execute as @a[tag=gaming] run attribute @s minecraft:generic.movement_speed base set 0.12
 
+# 重置背包、僵尸锚点
 clear @a[tag=gaming]
 tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
+kill @e[type=minecraft:item]
 
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
 tp @a[team=dead_player] 207 305 105
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
+# 清理所有tag
 tag @a remove helic
 tag @a remove dead
 tag @a remove gaming
 team empty playing
-kill @e[type=minecraft:item]
+
