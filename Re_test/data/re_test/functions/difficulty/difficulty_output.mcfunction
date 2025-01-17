@@ -18,7 +18,7 @@ execute if score @s personal_difficulty matches 1 run tellraw @a[scores={difficu
 execute if score @s personal_difficulty matches 2 run tellraw @a[scores={difficulty_style=2}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">山守门<","bold":true,"color":"yellow"}]
 execute if score @s personal_difficulty matches 3 run tellraw @a[scores={difficulty_style=2}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">令单通<","bold":true,"color":"red"}]
 execute if score @s personal_difficulty matches 4 run tellraw @a[scores={difficulty_style=2}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">无藏n15<","bold":true,"color":"dark_red"}]
-# 明日方舟
+# 求生之路
 execute if score @s personal_difficulty matches 0 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">新手<","bold":true,"color":"#66CCFF"}]
 execute if score @s personal_difficulty matches 1 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">简单<","bold":true,"color":"green"}]
 execute if score @s personal_difficulty matches 2 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">普通<","bold":true,"color":"yellow"}]
