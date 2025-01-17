@@ -1,5 +1,5 @@
 execute at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~
-tellraw @s [{"text":""},{"text":"\n"},{"text":"[当前版本]","bold":true,"color":"green"},{"text":"\n"},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.7","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[当前版本]","bold":true,"color":"green"},{"text":"\n"},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.7.1","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加每tick执行的函数集","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"呼叫直升机后添加几波次的僵尸","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加难度的风格切换","color":"yellow"}]
@@ -7,3 +7,10 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"优化几处传送朝向","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"现在游戏结束会切回白天","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"游戏开始后禁用游戏中玩家点击传送","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加药剂箱","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"管理面饭增加fun_time时间设置","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加fun_time秒数计算函数","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加药剂箱配套工具: 创建锚点/刷新物品/切换显隐/教程更新","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加药剂箱专用战利品表","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"死亡复活在大厅的玩家传送回地图","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"作弊回大厅的玩家也丢回去","color":"yellow"}]
