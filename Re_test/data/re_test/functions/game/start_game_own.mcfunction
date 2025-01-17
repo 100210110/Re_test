@@ -2,12 +2,15 @@ tag @s remove helic
 tag @s remove dead
 scoreboard players reset @s deathCount  
 tp @s[team=setout] -151 109 177
+tellraw @a[team=setout] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"selector":"@s"},{"text":" 加入战斗！","color":"yellow"}]
 
 # 前置，清空玩家效果和背包
 tag @s[team=setout] add gaming
 team join playing @s[tag=gaming]
 execute as @s[tag=gaming] run effect clear @s
 execute as @s[tag=gaming] run clear @s
+# wow, 氛围音效
+execute as @s[tag=gaming] at @s run playsound zombie_extreme:biome_wind_sound_radiation voice @s ~ ~ ~
 
 # 个人难度设定
 execute as @s[tag=gaming] unless score @s personal_difficulty matches 0..4 run scoreboard players set @s personal_difficulty 2

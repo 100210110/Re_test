@@ -13,6 +13,7 @@ scoreboard objectives remove kill
 scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
 scoreboard objectives setdisplay sidebar.team.blue kill
 bossbar remove minecraft:copter_time
+stopsound @a[tag=gaming]
 
 kill @e[type=minecraft:block_display,tag=villager]
 kill @e[type=minecraft:block_display,tag=villager_button]
