@@ -11,6 +11,8 @@ team join playing @a[tag=gaming]
 execute as @a[tag=gaming] run effect clear @s
 execute as @a[tag=gaming] run clear @s
 scoreboard players reset @a[tag=gaming] t_setout
+# wow, 氛围音效
+execute as @s[tag=gaming] at @s run playsound zombie_extreme:biome_wind_sound_radiation voice @s ~ ~ ~
 
 # 个人难度设定
 execute as @a[tag=gaming] unless score @s personal_difficulty matches 0..4 run scoreboard players set @s personal_difficulty 2
@@ -32,7 +34,10 @@ execute store result score safe_time time run scoreboard players get safe_time m
 schedule function re_test:reset_box/guns_box 3s append
 # 刷新物资箱
 schedule function re_test:reset_box/item_box 3s append
+# 刷新药品箱
+schedule function re_test:reset_box/medical_box 3s append
 # 村长家发光引导
+setblock -214 114 50 minecraft:cherry_button[face=floor,facing=east,powered=false]
 summon minecraft:block_display -214.0 113 50.0 {block_state:{Name:"minecraft:emerald_block"},Glowing:true,brightness:{block:15,sky:15},view_range:10,shadow_radius:0,Tags:["villager"]}
 summon minecraft:block_display -214.0 114 50.0 {block_state:{Name:"minecraft:cherry_button",Properties:{face:floor,facing:east}},Glowing:true,brightness:{block:15,sky:15},view_range:10,shadow_radius:0,Tags:["villager_button"]}
 
