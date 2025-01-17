@@ -33,12 +33,13 @@ effect clear @a[tag=gaming]
 execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 20
 execute as @a[tag=gaming] run attribute @s minecraft:generic.movement_speed base set 0.12
 
-# 重置背包、僵尸锚点
+# 重置背包、僵尸锚点、删除机动车
 clear @a[tag=gaming]
 tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
 kill @e[type=minecraft:item]
+function re_test:game/reset_car/kill
 
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
