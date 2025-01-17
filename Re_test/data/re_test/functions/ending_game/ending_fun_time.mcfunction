@@ -18,8 +18,12 @@ clone 208 190 120 206 196 125 206 297 103
 
 #title 持续
 title @a times 5 15 10
+
+# 清除河豚
+kill @e[type=minecraft:pufferfish]
 #------------------玩家区------------------------#
+difficulty peaceful
+clear @a[team=dead_player]
+effect clear @a[team=dead_player]
+effect give @a[team=dead_player] minecraft:instant_health 9 9 true
 team empty dead_player
-clear @a[tag=gaming]
-effect clear @a[tag=gaming]
-effect give @a[tag=gaming] minecraft:regeneration 10 10
