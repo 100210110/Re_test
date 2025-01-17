@@ -14,7 +14,8 @@ scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
 scoreboard objectives setdisplay sidebar.team.blue kill
 bossbar remove minecraft:copter_time
 stopsound @a[tag=gaming]
-
+# 刷新已加载锚点显隐状态，不改变，仅刷新
+function re_test:show_arm/refresh_status
 kill @e[type=minecraft:block_display,tag=villager]
 kill @e[type=minecraft:block_display,tag=villager_button]
 kill @e[type=minecraft:block_display,tag=copter]
