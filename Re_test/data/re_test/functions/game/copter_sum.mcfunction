@@ -12,3 +12,4 @@ bossbar add copter_time {"text":"救援直升机距离","color":"gold","bold":tr
 execute store result bossbar minecraft:copter_time max run scoreboard players get copter time
 execute store result bossbar minecraft:copter_time value run scoreboard players get copter time
 bossbar set minecraft:copter_time players @a[tag=gaming]
+scoreboard players set copter mode 1
