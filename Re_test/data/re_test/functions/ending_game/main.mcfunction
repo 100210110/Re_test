@@ -19,11 +19,18 @@ scoreboard players set game_start mode 0
 scoreboard players reset copter time
 bossbar remove minecraft:copter_time
 
+# 刷新已加载锚点显隐状态，不改变，仅刷新
+function re_test:show_arm/refresh_status
+
 # 清除发光引导
 kill @e[type=minecraft:block_display,tag=villager]
 kill @e[type=minecraft:block_display,tag=villager_button]
 kill @e[type=minecraft:block_display,tag=copter]
 kill @e[type=minecraft:block_display,tag=copter_button]
+
+# 中断两段BGM
+stopsound @a * playerrevive:tension
+stopsound @a * playerrevive:hightension
 
 # 恢复玩家属性
 effect clear @a[tag=gaming]
@@ -41,6 +48,9 @@ function re_test:game/reset_car/kill
 # 停止计时后进行结算函数，左下角显示结算信息
 schedule clear re_test:time/game_run_time/count_down
 function re_test:ending_game/score_settlement
+
+# 重置直升机触发条件
+scoreboard players set copter mode 0
 
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
