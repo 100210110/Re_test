@@ -34,6 +34,8 @@ clear @a[tag=gaming]
 tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
+# 重置游戏计时
+schedule clear re_test:time/game_run_time/count_down
 # 重置
 tag @a remove helic
 tag @a remove dead
