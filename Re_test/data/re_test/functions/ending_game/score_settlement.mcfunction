@@ -43,13 +43,14 @@ scoreboard players operation game_run_h_1 time /= 10 math
 
 
 # 游戏结束，播报计时
-tellraw @a [{"text":""},{"text":"[游戏结束]","bold":true,"color":"aqua"},{"text":"\n"},{"text":"\n"},{"text":"总击杀僵尸: ","bold":true,"color":"yellow"},{"score":{"name":"total","objective":"kill"},"color":"red"},{"text":"\n"},{"text":"总用时: ","bold":true,"color":"yellow"},{"score":{"name":"game_run_h_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_h_0","objective":"time"},"bold":true,"color":"green"},{"text":":"},{"score":{"name":"game_run_m_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_m_0","objective":"time"},"bold":true,"color":"green"},{"text":":"},{"score":{"name":"game_run_s_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_s_0","objective":"time"},"bold":true,"color":"green"}]
+tellraw @a [{"text":""},{"text":"[游戏结束]","bold":true,"color":"aqua"},{"text":"\n"},{"text":"总击杀僵尸: ","bold":true,"color":"yellow"},{"score":{"name":"total","objective":"kill"},"color":"red"},{"text":"\n"},{"text":"总用时: ","bold":true,"color":"yellow"},{"score":{"name":"game_run_h_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_h_0","objective":"time"},"bold":true,"color":"green"},{"text":":"},{"score":{"name":"game_run_m_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_m_0","objective":"time"},"bold":true,"color":"green"},{"text":":"},{"score":{"name":"game_run_s_1","objective":"time"},"bold":true,"color":"green"},{"score":{"name":"game_run_s_0","objective":"time"},"bold":true,"color":"green"}]
 tellraw @a [{"text":""},{"text":"\n"},{"text":"[存活玩家]","bold":true,"color":"aqua"}]
-execute as @a[team=score.life] run function re_test:difficulty/difficulty_output
+execute if entity @a[team=score.life] as @a[team=score.life] run function re_test:difficulty/difficulty_output
+execute unless entity @a[team=score.life] run tellraw @a [{"text":""},{"text":"- ","color":"green"},{"text":"无人生还","color":"gray"}]
 tellraw @a [{"text":""},{"text":"\n"},{"text":"[阵亡玩家]","bold":true,"color":"gray"}]
 # 将存活时间转化为 时分秒
 execute as @a[team=score.dead] run function re_test:difficulty/life_sec_to_time
 execute as @a[team=score.dead] run function re_test:difficulty/difficulty_output
-
+execute unless entity @a[team=score.dead] run tellraw @a [{"text":""},{"text":"- ","color":"green"},{"text":"全员生还","color":"aqua"}]
 
 scoreboard players set ending_score mode 0
