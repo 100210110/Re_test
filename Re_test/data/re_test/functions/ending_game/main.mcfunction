@@ -17,9 +17,6 @@ time set day
 difficulty peaceful
 scoreboard players set game_start mode 0
 scoreboard players reset copter time
-scoreboard objectives remove kill
-scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
-scoreboard objectives setdisplay sidebar.team.blue kill
 bossbar remove minecraft:copter_time
 
 # 清除发光引导
@@ -41,12 +38,19 @@ scoreboard players reset @e[tag=zomb_check_mark] cool_down
 kill @e[type=minecraft:item]
 function re_test:game/reset_car/kill
 
+# 停止计时后进行结算函数，左下角显示结算信息
+schedule clear re_test:time/game_run_time/count_down
+function re_test:ending_game/score_settlement
+
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
 tp @a[team=dead_player] 207 305 105 180 0
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
-# 清理所有tag
+# 清理所有tag、team、score
+scoreboard objectives remove kill
+scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
+scoreboard objectives setdisplay sidebar.team.blue kill
 tag @a remove helic
 tag @a remove dead
 tag @a remove gaming
