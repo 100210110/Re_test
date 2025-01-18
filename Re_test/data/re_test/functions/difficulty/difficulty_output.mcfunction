@@ -1,4 +1,5 @@
 execute unless score @s difficulty_style matches 0.. run scoreboard players set @s difficulty_style 0
+execute unless score @s kill matches 0.. run scoreboard players set @s kill 0
 
 # 正常风格
 execute if score @s personal_difficulty matches 0 run tellraw @a[scores={difficulty_style=0}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">轮椅<","bold":true,"color":"#66CCFF"}]
@@ -24,3 +25,6 @@ execute if score @s personal_difficulty matches 1 run tellraw @a[scores={difficu
 execute if score @s personal_difficulty matches 2 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">普通<","bold":true,"color":"yellow"}]
 execute if score @s personal_difficulty matches 3 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">困难<","bold":true,"color":"red"}]
 execute if score @s personal_difficulty matches 4 run tellraw @a[scores={difficulty_style=3}] [{"text":""},{"selector":"@s","color":"green"},{"text":" 的难度为: ","bold":true,"color":"yellow"},{"text":">专家<","bold":true,"color":"dark_red"}]
+
+# 结算阶段额外播报击杀数
+execute if score ending_score mode matches 1 run tellraw @a [{"text":""},{"text":"- ","bold":true,"color":"green"},{"text":"击杀数：","bold":true,"color":"yellow"},{"score":{"name":"@s","objective":"kill"},"bold":true,"color":"red"}]
