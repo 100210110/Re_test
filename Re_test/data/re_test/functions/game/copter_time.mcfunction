@@ -8,9 +8,6 @@ execute if score copter time matches 2400 run execute as @e[tag=zomb_check_mark]
 
 # music
 execute if score copter time matches 3600 as @a[tag=gaming] at @s run playsound playerrevive:tension voice @s ~ ~ ~
-execute if score copter time matches 400 as @a[tag=gaming] at @s run stopsound @s
-execute if score copter time matches 400 as @a[tag=gaming] at @s run playsound playerrevive:hightension voice @s ~ ~ ~
-
 
 execute if score copter time matches 1800 run title @a[tag=gaming] title {"text": "还有一分半! 冲散他们的阵型!","color":"red"}
 execute if score copter time matches 1800 run title @a[tag=gaming] subtitle {"text": "冲冲冲","color":"yellow"}
@@ -29,6 +26,14 @@ execute if score copter time matches 600 run item replace entity @a[tag=gaming,t
 execute if score copter time matches ..600 run particle minecraft:cloud -155 62 116 1 1 1 0.2 100 force
 # 飞机到达前夕召唤一大波僵尸
 execute if score copter time matches 599..600 run execute as @e[tag=zomb_check_mark] at @s if entity @e[tag=gaming,gamemode=adventure,type=minecraft:player,sort=nearest,limit=1,distance=20..50] run execute as @e[tag=zomb_run_mark,distance=..10] at @s run summon minecraft:zombie
+
+# 为了BGM响得不那么突然
+# execute if score copter time matches 400 as @a[tag=gaming] at @s run stopsound @s
+execute if score copter time matches 400 as @a[tag=gaming] at @s run playsound playerrevive:hightension voice @s ~ ~ ~
+execute if score copter time matches 400 run tellraw @a[tag=gaming] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"干掉它们！救援直升机即将在湖中悬停！","bold":true,"color":"red"}]
+execute if score copter time matches 395 run tellraw @a[tag=gaming] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"干掉它们！救援直升机即将在湖中悬停！","bold":true,"color":"red"}]
+execute if score copter time matches 390 run tellraw @a[tag=gaming] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"干掉它们！救援直升机即将在湖中悬停！","bold":true,"color":"red"}]
+execute if score copter time matches 385 run tellraw @a[tag=gaming] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"text":"干掉它们！救援直升机即将在湖中悬停！","bold":true,"color":"red"}]
 
 execute if score copter time matches 0 run clone -95 105 10 -65 127 -17 -171 65 100 masked
 execute if score copter time matches 0 run title @a[tag=gaming] title {"text": "救援已到达","color":"red"}
