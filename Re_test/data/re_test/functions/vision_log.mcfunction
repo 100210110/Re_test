@@ -79,4 +79,8 @@ tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加游玩总计数据","color":"yellow"}]
 tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"添加重置总计数据","color":"yellow"}]
 
-function re_test:vision
+tellraw @s [{"text":""},{"text":"\n"},{"text":"[历史版本]","bold":true,"color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"版本号: ","color":"yellow"},{"text":"v1.9","color":"green"},{"text":"\n"},{"text":"[更新内容]","bold":true,"color":"aqua"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"死亡玩家额外播报存活时间","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"实体命令方块逻辑迁移到数据包","color":"yellow"}]
+tellraw @s [{"text":""},{"text":"　　　　"},{"text":"- ","color":"green"},{"text":"修复因以时分秒格式显示引起的一万个bug","color":"yellow"}]
