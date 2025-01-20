@@ -18,7 +18,7 @@ difficulty peaceful
 scoreboard players set game_start mode 0
 scoreboard players reset copter time
 bossbar remove minecraft:copter_time
-
+spawnpoint @a[tag=gaming] 207 304 100 0
 # 刷新已加载锚点显隐状态，不改变，仅刷新
 function re_test:show_arm/refresh_status
 
@@ -43,6 +43,7 @@ tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
 kill @e[type=minecraft:item]
+kill @e[type=minecraft:experience_orb]
 function re_test:game/reset_car/kill
 
 # 停止计时后进行结算函数，左下角显示结算信息
@@ -58,9 +59,7 @@ tp @a[team=dead_player] 207 305 105 180 0
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
 # 清理所有tag、team、score
-scoreboard objectives remove kill
-scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
-scoreboard objectives setdisplay sidebar.team.blue kill
+function re_test:task_score/reset
 tag @a remove helic
 tag @a remove dead
 tag @a remove gaming
