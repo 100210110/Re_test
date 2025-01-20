@@ -7,3 +7,6 @@ summon minecraft:block_display -137.0 63 121.0 {block_state:{Name:"minecraft:eme
 summon minecraft:block_display -137.0 64 121.0 {block_state:{Name:"minecraft:cherry_button",Properties:{face:floor}},Glowing:true,brightness:{block:15,sky:15},view_range:10,shadow_radius:0,Tags:["copter_button"]}
 kill @e[type=minecraft:block_display,tag=villager]
 kill @e[type=minecraft:block_display,tag=villager_button]
+# 将任务一变为灰色
+function re_test:task_score/task_1_remove
+function re_test:task_score/task_2

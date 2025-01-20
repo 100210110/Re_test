@@ -12,4 +12,12 @@ bossbar add copter_time {"text":"救援直升机距离","color":"gold","bold":tr
 execute store result bossbar minecraft:copter_time max run scoreboard players get copter time
 execute store result bossbar minecraft:copter_time value run scoreboard players get copter time
 bossbar set minecraft:copter_time players @a[tag=gaming]
+
+# 将任务二变为灰色
+function re_test:task_score/task_2_remove
+function re_test:task_score/task_3
+function re_test:task_score/task_4
+
+
+# 模式中切换为1，本局将不再执行此函数
 scoreboard players set copter mode 1

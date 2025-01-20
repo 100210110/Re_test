@@ -6,6 +6,8 @@ scoreboard players set game_start mode 1
 time set night
 # 游戏时间开始计时，用于统计和结算的积分
 function re_test:time/game_run_time/main
+# 游戏开始，切换至第一任务
+function re_test:task_score/task_1
 
 # 前置，清空玩家效果和背包，游戏开始后禁用已加入游戏玩家的点击传送
 tag @a[team=setout] add gaming
