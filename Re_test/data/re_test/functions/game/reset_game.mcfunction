@@ -10,9 +10,8 @@ difficulty peaceful
 scoreboard players set game_start mode 0
 scoreboard players set ending_score mode 0
 scoreboard players reset copter time
-scoreboard objectives remove kill
-scoreboard objectives add kill totalKillCount {"text":"击杀数","color":"red"}
-scoreboard objectives setdisplay sidebar.team.blue kill
+# 任务计分板重置
+function re_test:task_score/reset
 scoreboard players set copter mode 0
 bossbar remove minecraft:copter_time
 stopsound @a[tag=gaming]
@@ -50,3 +49,4 @@ tag @a remove dead
 tag @a remove gaming
 team empty playing
 kill @e[type=minecraft:item]
+kill @e[type=minecraft:experience_orb]
