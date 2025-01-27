@@ -50,14 +50,22 @@ function re_test:game/reset_car/kill
 schedule clear re_test:time/game_run_time/count_down
 function re_test:ending_game/score_settlement
 
+# 停止fun_time重复的函数，无必要，保险
+schedule clear re_test:fun_time/ending_fun_time
+
 # 重置直升机触发条件
 scoreboard players set copter mode 0
 
 # 阵亡的加入此队伍进监狱，未阵亡回大厅
 team join dead_player @a[tag=dead]
-tp @a[team=dead_player] 207 305 105 180 0
+tp @a[tag=dead] 207 305 105 180 0
 execute as @a[tag=!dead,tag=gaming] run function re_test:team/leave_teaching
 
+# 如果同时有存活和死亡玩家，开始执行投票
+execute if entity @a[tag=dead] if entity @a[tag=!dead,tag=gaming] run function re_test:every_tick/vote/main
+execute if entity @a[tag=dead] if entity @a[tag=!dead,tag=gaming] run tellraw @a [{"text":""},{"text":">>> ","color":"yellow","bold":true},{"text":"部分人员","bold":true,"color":"yellow"},{"text":"已掉队","bold":true,"color":"gold"},{"text":"，","bold":true,"color":"yellow"},{"text":"惩罚环节","bold":true,"color":"red"},{"text":"启动！","bold":true,"color":"yellow"}]
+execute unless entity @a[tag=dead] run tellraw @a [{"text":""},{"text":">>> ","color":"yellow","bold":true},{"text":"由于无人","bold":true,"color":"yellow"},{"text":"掉队","bold":true,"color":"gold"},{"text":"，跳过惩罚环节","bold":true,"color":"yellow"}]
+execute unless entity @a[tag=!dead,tag=gaming] run tellraw @a [{"text":""},{"text":">>> ","color":"yellow","bold":true},{"text":"由于无人","bold":true,"color":"yellow"},{"text":"生还","bold":true,"color":"gold"},{"text":"，跳过惩罚环节","bold":true,"color":"yellow"}]
 # 清理所有tag、team、score
 function re_test:task_score/reset
 tag @a remove helic
