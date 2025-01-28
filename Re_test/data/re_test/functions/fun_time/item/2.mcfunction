@@ -1,0 +1,1 @@
+function re_test:fun_time/item/run/2_fishign_rod
