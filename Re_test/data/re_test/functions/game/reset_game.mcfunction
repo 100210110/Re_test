@@ -34,15 +34,20 @@ stopsound @a * playerrevive:tension
 stopsound @a * playerrevive:hightension
 # 重置玩家状态、玩家属性
 effect clear @a[tag=gaming]
-execute as @a[tag=gaming] run attribute @s minecraft:generic.max_health base set 20
-execute as @a[tag=gaming] run attribute @s minecraft:generic.movement_speed base set 0.12
+execute as @a run attribute @s minecraft:generic.max_health base set 20
+execute as @a run attribute @s minecraft:generic.movement_speed base set 0.12
 clear @a[tag=gaming]
+# 如果游戏没在启动倒计时，把所有非大厅人员tp回来
+execute unless score start_countdown time matches 1.. run tp @a[team=!lobby] 207 304 100 180 0
 # 重置锚点状态，重置cd
 tag @e[tag=zomb_check_mark] remove run
 tag @e[tag=zomb_check_mark] remove cd
 scoreboard players reset @e[tag=zomb_check_mark] cool_down
-# 重置游戏计时
+# 重置游戏计时、fun_time计时、投票检测
 schedule clear re_test:time/game_run_time/count_down
+schedule clear re_test:fun_time/ending_fun_time
+schedule clear re_test:every_tick/fun_time/count_down
+scoreboard players set test_vote mode 0
 # 重置
 tag @a remove helic
 tag @a remove dead

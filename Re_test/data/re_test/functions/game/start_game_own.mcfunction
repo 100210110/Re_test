@@ -1,6 +1,7 @@
 tag @s remove helic
 tag @s remove dead
-scoreboard players reset @s deathCount  
+scoreboard players reset @s deathCount
+scoreboard players set test_vote mode 0
 tp @s[team=setout] -151 109 177
 tellraw @a[team=setout] [{"text":""},{"text":">>> ","bold":true,"color":"yellow"},{"selector":"@s"},{"text":" 加入战斗！","color":"yellow"}]
 
